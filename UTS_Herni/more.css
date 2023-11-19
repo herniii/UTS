@@ -115,10 +115,10 @@ body {
 }
 
 table {
-    width: 35%;
-    min-height: 200vh;
+    width: 25%;
+    min-height: 300vh;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 35px auto;
     text-align: center;
 }
 
@@ -130,7 +130,7 @@ table thead {
 table th, table td {
     border: 1px solid var(--utama);
     padding: 5px;
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 600;
 }
 
