@@ -1,0 +1,482 @@
+:root{
+    --utama: #243949;
+    --background: #ECE9E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cambay', sans-serif;
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    color: var(--utama);
+    margin: 0;
+    padding: 0;
+    min-height: 2000px;
+}
+
+
+
+/*Navbar Start*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 1px #243949 solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+/*Navbar Logo*/
+.navbar .navbar-logo {
+    margin-left: 2rem;
+    font-weight: 700;
+    color:#243949;
+    font-size: 1.3rem;
+    font-style: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-logo span {
+    color: #FFFFFF;
+}
+
+/*Navbar Nav*/
+.navbar .navbar-nav a {
+    display:inline-block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--utama);
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--utama);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/*Navbar Ekstra*/
+.navbar .navbar-ekstra a {
+    color: var(--utama);
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-ekstra a:hover {
+    color: var(--utama);
+}
+
+#menu {
+    display: none;
+}
+/*Navbar End*/
+
+.header {
+    padding: 8rem 7% 1.rem;
+    flex: 1 1 45rem;
+}
+
+.header img {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    border-radius: 1rem;
+}
+
+.header h1 {
+    padding: 10rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgba(191, 227, 153, 1);
+    border: 3px solid rgb(191, 227, 153);
+    border-radius: 1rem;
+}
+
+.header h1 span {
+    color: var(--background);
+    text-shadow: 1px 1px 2px var(--utama);
+}
+
+/*Dropdown Start*/
+.intro {
+    outline-style: double;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: justify;
+    width: 60%;
+    margin: 20px auto;
+    background-color: #64b3f456;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex: 1 1 45rem;
+    margin-top: 1.2rem;
+    
+}
+
+.dropbtn {
+    background-color: var(--utama);
+    color: #ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--utama);
+    min-width: 160px;
+    box-shadow: 1px 1px 3px var(--background);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c2e59c;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c2e59c;
+}
+/*Dropdown End*/
+
+/*TXT Details Start*/
+.txt {
+    padding: 8rem 7% 1.4rem;
+}
+
+.txt h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.txt h2 span {
+    color: var(--background);
+    text-shadow: 1px 1px 2px var(--utama);
+}
+
+.txt .box-model {
+    border: 2px solid var(--utama);
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+table thead {
+    background-color: #0987db;
+    color: #fff;
+}
+
+table th, table td {
+    border: 1px solid var(--utama);
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+tr:nth-child(even) {
+    background-color: #c2e59c;
+}
+
+.content p {
+    margin-top: 2rem;
+    margin-left: auto;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    background-color: var(--utama);
+    color: #FFFFFF;
+}
+/*TXT Details End*/
+
+/*member*/
+.soobin,
+.yeonjun,
+.beomgyu,
+.taehyun,
+.hueningkai {
+    padding: 8rem 7% 1.4rem;
+}
+
+.soobin h2,
+.yeonjun h2,
+.beomgyu h2,
+.taehyun h2,
+.hueningkai h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.soobin .name,
+.yeonjun .name,
+.beomgyu .name,
+.taehyun .name,
+.hueningkai .name {
+    display: flex;
+}
+
+.soobin .name .name-img,
+.yeonjun .name .name-img,
+.beomgyu .name .name-img,
+.taehyun .name .name-img,
+.hueningkai .name .name-img {
+    flex: 1 1 45rem;
+}
+
+.soobin .name .name-img img,
+.yeonjun .name .name-img img,
+.beomgyu .name .name-img img,
+.taehyun .name .name-img img,
+.hueningkai .name .name-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.soobin .name .desc,
+.yeonjun .name .desc,
+.beomgyu .name .desc,
+.taehyun .name .desc,
+.hueningkai .name .desc {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.soobin .name p,
+.yeonjun .name p,
+.beomgyu .name p,
+.taehyun .name p,
+.hueningkai .name p {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.6;
+    text-align: justify;
+}
+/*member*/
+
+
+
+/*Footer*/
+footer {
+    background-color: var(--background);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+
+footer .sosmed {
+    padding: 1rem 0;
+}
+
+footer .sosmed a {
+    color: var(--utama);
+    margin: 1rem;
+}
+
+footer .sosmed a:hover {
+    color: #64b3f4;
+}
+
+footer .credit {
+    font-size: 1.4rem;
+}
+
+footer .credit a{
+    color: var(--utama);
+    font-weight: 600;
+}
+
+
+
+
+/*Media Queries*/
+/*Laptop*/
+@media (max-width: 1366px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    html{
+        font-size: 62.5%;
+    }
+
+    #menu{
+        display: inline-block;
+    }
+
+    /*Navbar*/
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #c2e59cc2;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: var(--utama);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(1);
+    }
+
+    /*Profile*/
+    .profile .row {
+        flex-wrap: wrap;
+    }
+
+    .profile .row .profile-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .profile .row .content {
+        padding: 0;
+    }
+
+    .profile .row .content p {
+        font-size: 1.6rem;
+    }
+    .profile .member p {
+        font-size: 1.4rem;
+    }
+
+    /*Discography*/
+    .disco h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        width: 55%;
+        height: 10vh;
+        top: 50%;
+    }
+
+        /*member*/
+        .soobin .name,
+        .yeonjun .name,
+        .beomgyu .name,
+        .taehyun .name,
+        .hueningkai .name {
+            flex-wrap: wrap;
+        }
+    
+        .soobin .name .name-img img,
+        .yeonjun .name .name-img img,
+        .beomgyu .name .name-img img,
+        .taehyun .name .name-img img,
+        .hueningkai .name .name-img img {
+            height: 24rem;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+        .soobin .name .desc,
+        .yeonjun .name .desc,
+        .beomgyu .name .desc,
+        .taehyun .name .desc,
+        .hueningkai .name .desc {
+            padding: 0;
+        }
+    
+        .soobin .name .desc p,
+        .yeonjun .name .desc p,
+        .beomgyu .name .desc p,
+        .taehyun .name .desc p,
+        .hueningkai .name .desc p {
+            font-size: 1.6rem;
+        }
+        
+}
+
+/*Smartphone*/
+@media (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
+
+        /*Discography*/
+        .disco h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            width: 50%;
+            height: 10vh;
+            top: 50%;
+            padding: 10rem;
+        }
+}

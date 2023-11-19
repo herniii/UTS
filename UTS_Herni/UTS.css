@@ -1,0 +1,474 @@
+:root{
+    --utama: #243949;
+    --background: #ECE9E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cambay', sans-serif;
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    color: var(--utama);
+    margin: 0;
+    padding: 0;
+    min-height: 2000px;
+}
+
+
+
+/*Navbar Start*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 1px #243949 solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+/*Navbar Logo*/
+.navbar .navbar-logo {
+    margin-left: 2rem;
+    font-weight: 700;
+    color:#243949;
+    font-size: 1.3rem;
+    font-style: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-logo span {
+    color: #FFFFFF;
+}
+
+/*Navbar Nav*/
+.navbar .navbar-nav a {
+    display:inline-block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--utama);
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--utama);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/*Navbar Ekstra*/
+.navbar .navbar-ekstra a {
+    color: var(--utama);
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-ekstra a:hover {
+    color: var(--utama);
+}
+
+#menu {
+    display: none;
+}
+/*Navbar End*/
+
+
+/*Home Section Start*/
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../UTS/txtimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(97, 178, 245, 0.5) 3%, rgba(194, 230, 156, 0) 25%);
+}
+
+.home .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.home .content h1 {
+    font-size: 4.5em;
+    color: var(--background);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px var(--utama);
+    line-height: 1.3;
+}
+
+.home .content h1 span {
+    color: #64b3f4
+}
+
+.home .content p {
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px #64b3f4;
+    mix-blend-mode: lighten;
+}
+
+.home .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: #FFFFFF; 
+    background-color: var(--utama);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px #64b3f4;
+}
+/*Home Section End*/
+
+/*Profile Section Start*/
+.profile {
+    padding: 8rem 7% 1.4rem;
+}
+
+.profile h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.profile h2 span {
+    color: var(--background);
+    text-shadow: 1px 1px 2px var(--utama);
+}
+
+.profile h3 {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile h3 span {
+    color: var(--background);
+    text-shadow: 1px 1px 2px var(--utama);
+}
+
+.profile h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.profile .row {
+    display: flex;
+}
+
+.profile .row .profile-img {
+    flex: 1 1 45rem;
+}
+
+.profile .row .profile-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.profile .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.profile .row p {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.profile .member p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.profile .rowmember {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.profile .rowmember .member-card {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.profile .rowmember .member-card img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.profile .rowmember .member-card .member-card-title {
+    margin: 1rem auto 0.5rem;
+}
+/*Profile Section End*/
+
+/*Discography Start*/
+.disco {
+    padding: 8rem 7% 1.4rem;
+}
+
+main {
+    padding: 0.5rem;
+}
+main .disco {
+    position: relative;
+}
+
+main .disco h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.disco h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff00;
+    text-align: center;
+    align-content: center;
+    font-size: 3rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0);
+    width: 55%;
+    height: 10vh;
+    position: absolute;
+    top: 45%;
+    padding: 15rem;
+    transform: translateY(-50%);
+}
+
+.disco h3:hover {
+    color: var(--background);
+    text-shadow: 2px 2px 4px #c2e59c;
+    background: rgba(0, 0, 0, 0.459);
+}
+
+.slide {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slide .slide-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slide .slide-img img {
+    vertical-align: middle;
+    width: 65%;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: (rgba(35, 56, 72, 3)34%, 21%);
+    border-radius: 85%;
+    transform: background 500ms;
+}
+
+.arrow img{
+  width: 50px;
+  color: #243949;
+}
+
+.arrow:hover{
+    background: rgba(0, 0, 0, 0, .4);
+}
+
+.l{
+    left: 0;
+}
+
+.r{
+    right: 0;
+}
+/*Discography End*/
+
+/*Footer*/
+footer {
+    background-color: var(--background);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+
+footer .sosmed {
+    padding: 1rem 0;
+}
+
+footer .sosmed a {
+    color: var(--utama);
+    margin: 1rem;
+}
+
+footer .sosmed a:hover {
+    color: #64b3f4;
+}
+
+footer .credit {
+    font-size: 1.4rem;
+}
+
+footer .credit a{
+    color: var(--utama);
+    font-weight: 600;
+}
+
+
+
+/*Media Queries*/
+/*Laptop*/
+@media (max-width: 1366px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    html{
+        font-size: 62.5%;
+    }
+
+    #menu{
+        display: inline-block;
+    }
+
+    /*Navbar*/
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #c2e59cc2;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: var(--utama);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(1);
+    }
+
+    /*Profile*/
+    .profile .row {
+        flex-wrap: wrap;
+    }
+
+    .profile .row .profile-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .profile .row .content {
+        padding: 0;
+    }
+
+    .profile .row .content p {
+        font-size: 1.6rem;
+    }
+    .profile .member p {
+        font-size: 1.4rem;
+    }
+
+    /*Discography*/
+    .disco h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        width: 55%;
+        height: 10vh;
+        top: 50%;
+    }
+}
+
+/*Smartphone*/
+@media (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
+
+        /*Discography*/
+        .disco h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            width: 50%;
+            height: 10vh;
+            top: 50%;
+            padding: 10rem;
+        }
+}
