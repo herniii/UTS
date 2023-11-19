@@ -116,9 +116,9 @@ body {
 
 table {
     width: 60%;
-    min-height: 100vh;
+    min-height: 50vh;
     border-collapse: collapse;
-    margin: 15px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -130,8 +130,8 @@ table thead {
 table th, table td {
     border: 1px solid var(--utama);
     padding: 5px;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 tr:nth-child(even) {
