@@ -130,7 +130,7 @@ table thead {
 table th, table td {
     border: 1px solid var(--utama);
     padding: 5px;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 600;
 }
 
